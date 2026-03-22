@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Play Game | AcademiaTechGames</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  "secondary-dim": "#e4006c",
+                  "surface-bright": "#282b3a",
+                  "on-surface-variant": "#a9aab7",
+                  "on-surface": "#f0f0fd",
+                  "surface-container-high": "#1c1f2b",
+                  "tertiary": "#ac89ff",
+                  "on-background": "#f0f0fd",
+                  "inverse-on-surface": "#53545f",
+                  "on-primary-fixed-variant": "#006065",
+                  "secondary-fixed": "#ffc1ce",
+                  "outline-variant": "#464752",
+                  "on-secondary-fixed-variant": "#a1004b",
+                  "tertiary-container": "#7000ff",
+                  "inverse-primary": "#006a70",
+                  "surface-variant": "#222532",
+                  "on-tertiary-fixed": "#1f0052",
+                  "error": "#ff716c",
+                  "background": "#0c0e17",
+                  "primary-fixed": "#00f1fe",
+                  "primary-fixed-dim": "#00e2ee",
+                  "secondary-container": "#bb0058",
+                  "on-tertiary-container": "#f8f1ff",
+                  "surface-container-highest": "#222532",
+                  "on-primary-container": "#00555a",
+                  "on-primary": "#005f64",
+                  "inverse-surface": "#faf8ff",
+                  "on-secondary-container": "#fff5f6",
+                  "secondary": "#ff6b98",
+                  "on-secondary": "#47001d",
+                  "tertiary-fixed": "#bda1ff",
+                  "primary-container": "#00f1fe",
+                  "on-secondary-fixed": "#6d0030",
+                  "tertiary-dim": "#874cff",
+                  "on-error": "#490006",
+                  "surface-container-low": "#11131d",
+                  "error-container": "#9f0519",
+                  "primary-dim": "#00e2ee",
+                  "surface-dim": "#0c0e17",
+                  "on-tertiary-fixed-variant": "#4700a7",
+                  "on-tertiary": "#290067",
+                  "surface-tint": "#99f7ff",
+                  "on-error-container": "#ffa8a3",
+                  "surface-container": "#171924",
+                  "tertiary-fixed-dim": "#b190ff",
+                  "primary": "#99f7ff",
+                  "on-primary-fixed": "#004145",
+                  "outline": "#737580",
+                  "surface-container-lowest": "#000000",
+                  "secondary-fixed-dim": "#ffadc0",
+                  "error-dim": "#d7383b",
+                  "surface": "#0c0e17"
+                },
+                fontFamily: {
+                  "headline": ["Plus Jakarta Sans"],
+                  "body": ["Plus Jakarta Sans"],
+                  "label": ["Plus Jakarta Sans"]
+                },
+                borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+              },
+            },
+          }
+    </script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0c0e17; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-panel { background: rgba(153, 247, 255, 0.05); backdrop-filter: blur(20px); }
+        .pulse-shadow { box-shadow: 0 0 20px rgba(0, 242, 255, 0.15); }
+        .kinetic-gradient { background: linear-gradient(135deg, #99f7ff 0%, #00f1fe 100%); }
+    </style>
+</head>
+<body class="text-on-surface bg-background min-h-screen">
+    <!-- TopNavBar -->
+    <nav class="bg-[#0c0e17] docked full-width top-0 z-50 flex justify-between items-center w-full px-8 py-4 max-w-[1920px] mx-auto shadow-[0_4px_20px_rgba(0,242,255,0.1)]">
+        <div class="flex items-center gap-12">
+            <div class="text-2xl font-black italic tracking-tighter text-[#00F2FF] drop-shadow-[0_0_8px_rgba(0,242,255,0.5)] font-headline cursor-pointer" onclick="location.href='index.html'">
+                AcademiaTechGames
+            </div>
+            <div class="hidden md:flex gap-8 font-headline font-extrabold tracking-tight text-[#a9aab7]">
+                <a class="hover:text-[#00F2FF] transition-colors duration-200" href="index.html">Lobby</a>
+                <a class="hover:text-[#00F2FF] transition-colors duration-200" href="#">Tournaments</a>
+                <a class="hover:text-[#00F2FF] transition-colors duration-200" href="#">Rankings</a>
+                <a class="hover:text-[#00F2FF] transition-colors duration-200" href="#">Shop</a>
+                <a class="hover:text-[#00F2FF] transition-colors duration-200" href="#">Community</a>
+            </div>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="hidden lg:flex items-center bg-surface-container-lowest rounded-full px-4 py-2 border border-outline-variant/15">
+                <span class="material-symbols-outlined text-on-surface-variant mr-2">search</span>
+                <input class="bg-transparent border-none focus:ring-0 text-sm text-on-surface w-48 outline-none" placeholder="Search universe..." type="text"/>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="p-2 text-on-surface-variant hover:text-[#00F2FF] transition-all"><span class="material-symbols-outlined">notifications</span></button>
+                <button class="p-2 text-on-surface-variant hover:text-[#00F2FF] transition-all"><span class="material-symbols-outlined">bolt</span></button>
+                <div class="w-10 h-10 rounded-full border-2 border-[#00F2FF] p-0.5 overflow-hidden">
+                    <img alt="Profile" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGQ9-GZ5V6NfTDAje_6mfIIc7idn-O-NaBIqnRDkimaaQ4-bA863gCSkkuUaLYhlRHlYFqiPmSq2pjeQI28ikTlztDh6lA6ScZwFuJ2Qmdl6ntX0e4Uo79TRsPl9mUu_1_UEsuAaasvJoE3enSZ2-5Vura64gRteldXi58d7KXCaIHfT7nzSo7ejo6HbYmG34D3GaT5Ch-RsmS3GdYSsmLxc_3c_kBmAlfHUnpi5EApHswHgUApj6rV6IN5gsE95jMoRvJr4_aheA"/>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-[1920px] mx-auto px-8 py-8 grid grid-cols-12 gap-8">
+        <!-- Sidebar Navigation -->
+        <aside class="col-span-12 lg:col-span-2 space-y-8">
+            <div class="bg-surface-container-low p-6 rounded-xl">
+                <h3 class="font-headline font-extrabold text-xs uppercase tracking-[0.2em] text-secondary mb-6">Quick Access</h3>
+                <nav class="space-y-4">
+                    <a class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-high text-primary hover:scale-105 transition-transform" href="#">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+                        <span class="font-bold text-sm">Action</span>
+                    </a>
+                    <a class="flex items-center gap-3 p-3 rounded-lg hover:bg-surface-container-high transition-all text-on-surface-variant hover:text-on-surface" href="#">
+                        <span class="material-symbols-outlined">sports_esports</span>
+                        <span class="font-bold text-sm">RPG</span>
+                    </a>
+                    <a class="flex items-center gap-3 p-3 rounded-lg hover:bg-surface-container-high transition-all text-on-surface-variant hover:text-on-surface" href="#">
+                        <span class="material-symbols-outlined">strategy</span>
+                        <span class="font-bold text-sm">Strategy</span>
+                    </a>
+                    <a class="flex items-center gap-3 p-3 rounded-lg hover:bg-surface-container-high transition-all text-on-surface-variant hover:text-on-surface" href="#">
+                        <span class="material-symbols-outlined">grid_view</span>
+                        <span class="font-bold text-sm">Puzzle</span>
+                    </a>
+                </nav>
+            </div>
+            <div class="bg-surface-container-low p-6 rounded-xl relative overflow-hidden group border border-outline-variant/10">
+                <h3 class="font-headline font-extrabold text-xs uppercase tracking-[0.2em] text-tertiary mb-4">Epic Loot</h3>
+                <div class="relative z-10">
+                    <img alt="Special Bundle" class="w-full h-32 object-cover rounded-lg mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX5-GVVLfOGXBC1y1d6bo2L_F2GrYUGtO8_A6mG0h_nYR9-FJGso1uUYt150jGVxvJ-M2YOFhFpg7cAltDUlFPm7HJfAcZCvyN_iK2gM7CASAdcir-mzdipUVxTojRMnfOH2oj3sQiI4zqjArnFM9nGZ_GtGyPGqcPwACtO24hutqQeDmUklL87jjRazDoWbl3r8og1hPUzYzLiXRkfCtfHxc017jhRsu15KqlKmPyEV0NaETd-Awgst8Wd2iFhDY171qXYLdd0DM"/>
+                    <p class="text-sm font-bold leading-tight mb-2">Neon Strike Bundle</p>
+                    <button class="w-full py-2 kinetic-gradient text-on-primary font-black text-xs uppercase tracking-tighter rounded-full pulse-shadow">Get Core</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Central Viewport -->
+        <section class="col-span-12 lg:col-span-7 space-y-8" id="game-viewport">
+            <!-- Game Player -->
+            <div class="relative aspect-video bg-surface-container-lowest rounded-xl overflow-hidden pulse-shadow group border border-outline-variant/10">
+                <iframe id="game-player-frame" class="w-full h-full border-none" allowfullscreen></iframe>
+                
+                <!-- Interface Overlays (Optional, could be hidden when game starts) -->
+                <div class="absolute inset-0 pointer-events-none flex flex-col justify-between p-8 invisible group-hover:visible transition-all">
+                    <div class="flex justify-between items-start pointer-events-auto">
+                        <div class="glass-panel px-6 py-3 rounded-full flex items-center gap-4">
+                            <div class="flex flex-col">
+                                <span class="text-[10px] uppercase font-black text-primary tracking-[0.2em]">Live Session</span>
+                                <span id="game-title" class="text-lg font-extrabold tracking-tight">GAME_TITLE</span>
+                            </div>
+                            <div class="w-3 h-3 rounded-full bg-secondary animate-pulse shadow-[0_0_10px_#ff6b98]"></div>
+                        </div>
+                        <div class="flex gap-4">
+                            <button class="glass-panel p-3 rounded-full hover:bg-primary/20 transition-all text-primary"><span class="material-symbols-outlined">fullscreen</span></button>
+                            <button class="glass-panel p-3 rounded-full hover:bg-primary/20 transition-all text-primary"><span class="material-symbols-outlined">settings</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Info -->
+            <div class="flex flex-col md:flex-row gap-8 items-start">
+                <div class="flex-1">
+                    <div id="game-tags" class="flex gap-2 mb-4">
+                        <!-- Tags populated by script.js -->
+                    </div>
+                    <h1 id="game-title-display" class="text-4xl font-black italic tracking-tighter mb-4 text-on-surface uppercase"></h1>
+                    <p id="game-description" class="text-on-surface-variant leading-relaxed max-w-2xl">
+                        <!-- Description populated by script.js -->
+                    </p>
+                </div>
+                <div class="bg-surface-container-high p-6 rounded-xl flex flex-col items-center gap-4 w-full md:w-auto">
+                    <span class="text-xs font-black text-on-surface-variant uppercase tracking-widest">Global Rank</span>
+                    <span class="text-5xl font-black italic text-secondary tracking-tighter drop-shadow-[0_0_10px_rgba(255,107,152,0.3)]">#42</span>
+                    <button class="bg-surface-bright border border-outline-variant/30 text-xs font-bold px-6 py-3 rounded-full hover:bg-surface-container-highest transition-all w-full">View Leaderboard</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Side: Social & Challenges -->
+        <aside class="col-span-12 lg:col-span-3 space-y-8">
+            <div class="bg-surface-container-low rounded-xl p-6 relative overflow-hidden">
+                <h3 class="font-headline font-extrabold text-xs uppercase tracking-[0.2em] text-primary mb-6">Active Trials</h3>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-surface-container-high rounded-xl flex items-center justify-center border border-primary/20">
+                            <span class="material-symbols-outlined text-primary">speed</span>
+                        </div>
+                        <div>
+                            <p class="text-sm font-extrabold">Sonic Boom</p>
+                            <p class="text-xs text-on-surface-variant">Reach 300km/h in tunnels</p>
+                            <div class="mt-2 h-1 w-full bg-surface-container-highest rounded-full overflow-hidden">
+                                <div class="h-full bg-primary w-4/5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0c0e17] full-width border-t border-[#464752]/15 w-full px-12 py-16 flex flex-col md:flex-row justify-between items-center gap-8 mt-12">
+        <div class="flex flex-col items-center md:items-start gap-4">
+            <div class="text-lg font-black text-[#ff6b98] font-headline">AcademiaTechGames</div>
+            <p class="font-headline text-sm uppercase tracking-widest text-[#a9aab7] text-center md:text-left">
+                © 2024 ACADEMIATECHGAMES INTERACTIVE. ALL RIGHTS RESERVED.
+            </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 font-headline text-sm uppercase tracking-widest text-[#a9aab7]">
+            <a class="hover:text-[#ff6b98] transition-colors duration-300" href="#">Terms of Combat</a>
+            <a class="hover:text-[#ff6b98] transition-colors duration-300" href="#">Privacy Protocol</a>
+            <a class="hover:text-[#ff6b98] transition-colors duration-300" href="#">Support Core</a>
+            <a class="hover:text-[#ff6b98] transition-colors duration-300" href="#">Media Kit</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "quantum-breach",
+    "title": "QUANTUM_BREACH",
+    "description": "High-velocity neural combat in a neon-soaked cityscape.",
+    "category": "ACTION",
+    "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuCmhzkgmR2yw0c5PBv1L39IieZ8nF1Xm51K8sG_pwDRNS5fBL3C9zkjbCATb8mcEjIKxNMj7nAgVbM3aFH2Vp_H-vfCgVxwcyQWDxx5sOudsid-Cjt6qutiiPbCObmc7Jsk8VJJ-4u0OQtGFc2TpgDweqCGg7VLu_1cbTH67ivnL6LSDc85LlZnKh1u5FUtZyR_6X722wokcWGuDd3jZuaS_mdUHoQhIn9-9J2-J8we29EmHm8tOvFnDcwiNKrgo0nSIRh43ae4HQM",
+    "embedUrl": "https://www.retrogames.cc/embed/40238-super-mario-64-usa.html",
+    "tags": ["Cyberpunk", "Multiplayer", "Fast-Paced"],
+    "rating": "4.9"
+  },
+  {
+    "id": "synth-wave-racer",
+    "title": "SYNTH_WAVE_RACER",
+    "description": "Velocity-based combat in a procedural neon cityscape.",
+    "category": "ARCADE",
+    "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuBhD62hrh2XhJSVn7ZfJ5ZS8Saa2LvuHTm8EiB0-1Wz4YozQz0LuvOzJQR9nz2aZH3h5ONY8gdqdev_MsOl4zMTZBv2MqWDUsVUkQHlfuntwQ1IDRG8NMNfXPrSx7__hGTOb7Qbm5s67nQypg2jsq11ndwGj6SacRVOBJKTYIAJ0AzXNoGcOYLQSzCODZBrck5qR4ZhYUmETfGcABq5A4MS4zx-pkxhkV2Gwko54oBYBDWXWXx-oOyXqJX0ALIzW2u-jnXQDvuaInc",
+    "embedUrl": "https://www.retrogames.cc/embed/40238-super-mario-64-usa.html",
+    "tags": ["Retro", "Racing", "Neon"],
+    "rating": "4.8"
+  },
+  {
+    "id": "neon-nights",
+    "title": "NEON_NIGHTS",
+    "description": "Explore the alleyways of a futuristic megalopolis.",
+    "category": "RPG",
+    "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuDq8cFv1HDOqcO9cvp185_CnIs0SVttGECObQbKS8LsJcAmqY2HfjdQYPv4TOB1R9QE6_omtnk5yqsdm1gt0jQjdj9uNAiMU7rzOjQbBi45850SN8_vSMRDDGB8FEjBfbfapR26-2enuln4xf1yWa4_fzmv7Mak7NowWxRgHGQAVZ-YoAIkbIw5qHNUTSVA-ovkoAkWuB0Jczo-QYC7EwDV1HA252pZarKF5ljU8rmerheXDmVNiV4k_O11_66QBjdwfBoTb903UX8",
+    "embedUrl": "https://www.retrogames.cc/embed/40238-super-mario-64-usa.html",
+    "tags": ["Cyberpunk", "Story", "Open World"],
+    "rating": "4.7"
+  },
+  {
+    "id": "hyper-drive",
+    "title": "HYPER_DRIVE",
+    "description": "Infinite speed in a procedural void.",
+    "category": "ARCADE",
+    "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuADaKCr_nsQleEdPUUF51rqW9G_8p4pFEjdqxq7RmEKiw9EPS-QAJC2qqMdaHI9_l4Wnyjn-h3w_Y3sEZWSEELnXnJN4AusBSo5WQXr_dRzXyz0_qxEVK4ziPsN9aZlOAyb2RrCgKoutr2n5-2Ovbi_nP83FGu2-B3cTkEtMsdaUNcwWWrVV5qfyKrY3kRIXWRRnSC98vZHB-uvFuLjmMaF0Z0qxYdTfU6oGnnfL9BOBhSNrMub3lc3rQbDqSWBPbDZDmz6Dv8hqY8",
+    "embedUrl": "https://www.retrogames.cc/embed/40238-super-mario-64-usa.html",
+    "tags": ["Speed", "Arcade", "High-Octane"],
+    "rating": "4.9"
+  }
+]
