@@ -4,10 +4,20 @@
     "title": "BALDI'S BASICS",
     "description": "A 90s edutainment-inspired horror-adventure game. Can you escape Baldi's school house after collecting all 7 notebooks?",
     "category": "HORROR",
-    "thumbnail": "thumbnails/baldi.png",
+    "thumbnail": "https://raw.githubusercontent.com/bubbls/UGS-Assets/main/baldis-basics/thumbnail.png",
     "embedUrl": "baldi.html",
     "tags": ["Horror", "Retro", "Survival"],
     "rating": "4.5"
+  },
+  {
+    "id": "2048",
+    "title": "2048",
+    "description": "The classic sliding tile puzzle game. Join the numbers to get to the 2048 tile!",
+    "category": "ARCADE",
+    "thumbnail": "https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/b86a07406a6c0c27883b4b5952c6f14b.png",
+    "embedUrl": "https://play.famobi.com/2048",
+    "tags": ["Puzzle", "Logic", "Classic"],
+    "rating": "4.8"
   }
 ]
 
