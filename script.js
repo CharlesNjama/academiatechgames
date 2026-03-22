@@ -155,6 +155,29 @@ async function initPlayPage() {
                 <span class="bg-surface-container-high text-on-surface-variant text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider">${tag}</span>
             `).join('');
         }
+
+        // --- FULL PAGE / FULLSCREEN LOGIC ---
+        const fullscreenBtn = document.querySelector('#fullscreen-btn');
+        const fullpageBtn = document.querySelector('#fullpage-btn');
+        const gameFrame = document.querySelector('#game-player-frame');
+
+        if (fullscreenBtn && gameFrame) {
+            fullscreenBtn.addEventListener('click', () => {
+                if (gameFrame.requestFullscreen) {
+                    gameFrame.requestFullscreen();
+                } else if (gameFrame.webkitRequestFullscreen) { /* Safari */
+                    gameFrame.webkitRequestFullscreen();
+                } else if (gameFrame.msRequestFullscreen) { /* IE11 */
+                    gameFrame.msRequestFullscreen();
+                }
+            });
+        }
+
+        if (fullpageBtn) {
+            fullpageBtn.addEventListener('click', () => {
+                window.open(game.embedUrl, '_blank');
+            });
+        }
     }
 }
 
