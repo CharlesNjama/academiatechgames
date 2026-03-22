@@ -26,6 +26,17 @@ async function initHomePage() {
     const categoryButtons = document.querySelectorAll('.category-btn');
 
     function renderGames(filteredGames) {
+        if (filteredGames.length === 0) {
+            grid.innerHTML = `
+                <div class="col-span-full py-20 text-center">
+                    <span class="material-symbols-outlined text-6xl text-on-surface-variant/20 mb-4">search_off</span>
+                    <h3 class="text-xl font-bold text-on-surface-variant">The void is empty</h3>
+                    <p class="text-on-surface-variant/60">No games found in this sector. Try another transmission.</p>
+                </div>
+            `;
+            return;
+        }
+
         grid.innerHTML = filteredGames.map(game => `
             <div class="group cursor-pointer" onclick="location.href='play.html?game=${game.id}'">
                 <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-high mb-4">
