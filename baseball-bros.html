@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<!-- Ultimate Game Stash file--> 
+<!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <base href="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@ae6706e5224c55594c491edfc7f5ad541e2ea02b/baseball%20bros/">
+    <title>BASEBALL BROS! | Official Site</title>
+    <meta name="description" content="Online multiplayer baseball! Strikeouts, steals, and grand slams! Hit Nukes!" />
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" type="image/png" href="./favicon.png">
+    <meta name="Keywords" content="Baseball, Play, Free, Online, Multiplayer, Games, IO, Sports, Scrolling, Friends">
+    <meta name="author" content="Blue Wizard Digital">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Baseball Bros" />
+    <meta property="og:description" content="Online multiplayer baseball! Hit home runs, steal bases, strike out the side!" />
+    <link rel="manifest" href="manifest.json">
+
+    <script type="text/javascript" src="./BaseballBros.js?th=76"></script>
+
+    <script>
+        window.addEventListener("touchmove", function(event) {
+            event.preventDefault();
+        }, {
+            capture: false,
+            passive: false
+        });
+        if (typeof window.devicePixelRatio != 'undefined' && window.devicePixelRatio > 2) {
+            var meta = document.getElementById("viewport");
+            meta.setAttribute('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
+        }
+        window.addEventListener('keydown', function(e) {
+            if ((e.keyCode == 32 || e.keyCode == 38 || e.keyCode == 40 || e.keyCode == 9) && e.target == document.body) {
+                e.preventDefault();
+            }
+        });
+        var aCo = 'US';
+    </script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: #000000;
+            color: orange;
+            width: 100%;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .body::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        #openfl-content {
+            background: #000000;
+            width: 100%;
+            height: 100%;
+        }
+
+        #more {
+            display: flex;
+            justify-content: space-between;
+            background-color: #1a1a1a;
+            padding: 40px;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .info-box {
+            width: 48%;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #ffa500;
+            margin-bottom: 15px;
+        }
+
+        p, b {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        b {
+            color: #ffd700;
+        }
+
+        a:link, a:visited, a:hover, a:active {
+            color: #ffd700;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 20px 0;
+            text-align: center;
+            color: #ccc;
+            font-size: 14px;
+            border-top: 2px solid #444;
+            margin-top: 40px;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+
+<body style="overflow:hidden;">
+    <noscript>Enable JavaScript bro!</noscript>
+    <div id="game2" style="width: 100%; height: 100%; ">
+        <div id="openfl-content" onblur="window.focus(); window.scrollTo(0, 0);" style="width: calc(100%); float:left;">
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@ae6706e5224c55594c491edfc7f5ad541e2ea02b/baseball%20bros/lime.js"></script>
+            <script type="text/javascript">
+                lime.embed("BaseballBros", "openfl-content", 0, 0, {
+                    parameters: {}
+                });
+            </script>
+        </div>
+    </div>
+    <div id="more">
+        <div class="info-box">
+            <h3>About Baseball Bros</h3>
+            <p>Baseball Bros is a simple, fast-paced baseball game that's easy to learn and has lots of crazy hijinks! With online multiplayer gameplay, franchise mode, fun pitching, and so much more!</p>
+            <p>Controls: Use either the arrow keys or WASD to control your bro. Space bar will throw a the ball, dive, slide, or change directions when you're running the bases.</p>
+        </div>
+        <div class="info-box">
+            <h3>FAQ</h3>
+            <b>Why isn't the game loading?</b>
+            <p>You should check your internet connection and make sure our site isn't blocked.</p>
+            <b>How do I play?</b>
+            <p>Use your arrow keys and space bar! The rest is easy- pick your play and go!</p>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-links">
+            <a href="https://bluewizard.com">Copyright 2024 Blue Wizard Digital</a> |
+            <a href="https://bluewizard.com/terms/">Terms of Service</a> |
+            <a href="https://bluewizard.com/privacypolicy/">Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>

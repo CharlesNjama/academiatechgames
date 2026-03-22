@@ -8,6 +8,16 @@
     "embedUrl": "baldi.html",
     "tags": ["Horror", "Retro", "Survival"],
     "rating": "4.5"
+  },
+  {
+    "id": "baseball-bros",
+    "title": "BASEBALL BROS",
+    "description": "The ultimate online multiplayer baseball experience! Hit home runs, steal bases, and strike out the competition in this fast-paced sports game.",
+    "category": "SPORTS",
+    "thumbnail": "thumbnails/baseball-bros.png",
+    "embedUrl": "baseball-bros.html",
+    "tags": ["Sports", "Multiplayer", "Arcade"],
+    "rating": "4.7"
   }
 ]
 
